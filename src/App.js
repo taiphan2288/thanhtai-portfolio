@@ -15,10 +15,6 @@ function App() {
   const [isTopOfPage, setIsTopOfPage] = useState(true);
 
   useEffect(() => {
-    import("tw-elements");
-  }, []);
-
-  useEffect(() => {
     const handleScroll = () => {
       if (window.scrollY === 0) {
         setIsTopOfPage(true);
