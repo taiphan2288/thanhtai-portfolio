@@ -1,4 +1,3 @@
-const plugin = require("tailwindcss/plugin");
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
@@ -92,10 +91,5 @@ module.exports = {
       ],
     },
   },
-  plugins: [
-    require("@tailwindcss/line-clamp"),
-    plugin(function ({ addVariant }) {
-      addVariant("not-last-child", "&:not(:last-child)");
-    }),
-  ],
+  plugins: [],
 };
