@@ -1,13 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   important: true,
-  purge: [
-    "./src/**/*.html",
-    "./src/**/*.js",
-    "./src/**/*.jsx",
-    "./public/**/*.html",
-    "./src/**/*.ts",
-    "./src/**/*.tsx",
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/tw-elements/dist/js/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
@@ -97,5 +94,5 @@ module.exports = {
       ],
     },
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [require("tw-elements/dist/plugin")],
 };
