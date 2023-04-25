@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./public/index.html", "./src/**/*.{html,js}"],
+  content: ["./src/**/*.{html,js,jsx}"],
   darkMode: "class",
   theme: {
     extend: {
@@ -52,8 +52,6 @@ module.exports = {
       boxShadow: {
         "3xl": "0 15px 15px 1px rgba(80,230,217, 0.4)",
         cardShadow: "0 2px 10px rgba(0, 0, 0, 0.2)",
-        "box-shadow-dark": " rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;",
-        "box-shadow-white": " rgba(255, 255, 255, 0.56) 0px 5px 70px 4px;",
       },
 
       screens: {
