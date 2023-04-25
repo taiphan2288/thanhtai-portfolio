@@ -1,11 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   important: true,
-  content: [
-    "./Components/**/*.{html,js}",
-    "./pages/**/*.{html,js}",
-    "./index.html",
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   darkMode: "class",
   theme: {
     extend: {
@@ -95,5 +91,5 @@ module.exports = {
       ],
     },
   },
-  plugins: ["postcss-import", "tailwindcss", "autoprefixer"],
+  plugins: [],
 };
