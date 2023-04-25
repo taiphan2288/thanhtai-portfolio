@@ -131,8 +131,8 @@ const Weather = () => {
 
   return (
     <div
-      className="w-full flex border-2 border-red justify-center items-center py-9 px-3 rounded-[16px] 
-    lg:flex-col lg:py-4 xs:border-none"
+      className="w-full flex border-2 border-red justify-center items-center py-9 px-3 rounded-[16px] shadow-box-shadow-dark 
+    lg:flex-col lg:py-4 xs:border-none dark:shadow-box-shadow-white"
     >
       {/* Calendar and dark mode */}
       <div className="flex flex-col items-center justify-between gap-y-2">
