@@ -93,7 +93,7 @@ const Calendar = () => {
                 type="button"
                 onClick={() => setSelectedDay(day)}
                 className={classNames(
-                  isEqual(day, selectedDay) && "text-white",
+                  isEqual(day, selectedDay) && "text-white dark:text-black",
                   !isEqual(day, selectedDay) && isToday(day) && "text-red",
                   !isEqual(day, selectedDay) &&
                     !isToday(day) &&
@@ -102,11 +102,11 @@ const Calendar = () => {
                   !isEqual(day, selectedDay) &&
                     !isToday(day) &&
                     !isSameMonth(day, firstDayCurrentMonth) &&
-                    "text-gray-400",
-                  isEqual(day, selectedDay) && isToday(day) && "bg-red ",
+                    "text-gray-400 ",
+                  isEqual(day, selectedDay) && isToday(day) && "bg-red",
                   isEqual(day, selectedDay) &&
                     !isToday(day) &&
-                    "bg-black dark:bg-white",
+                    "dark:text-white dark:bg-white bg-dark",
                   !isEqual(day, selectedDay) &&
                     "hover:bg-gray-200 dark:hover:text-black",
                   (isEqual(day, selectedDay) || isToday(day)) &&

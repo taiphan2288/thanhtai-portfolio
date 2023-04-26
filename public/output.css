@@ -1796,6 +1796,11 @@ body {
   background-image: repeating-radial-gradient(rgba(255,255,255,0.5) 2px,#1b1b1b 8px,#1b1b1b 100px);
 }
 
+:is(.dark .dark\:text-black){
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 :is(.dark .dark\:text-dark){
   --tw-text-opacity: 1;
   color: rgb(27 27 27 / var(--tw-text-opacity));
