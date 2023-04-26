@@ -2022,6 +2022,11 @@ body {
     left: 20px;
   }
 
+  .xs\:mx-auto{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .xs\:mt-24{
     margin-top: 6rem;
   }
@@ -2040,6 +2045,10 @@ body {
 
   .xs\:w-\[40px\]{
     width: 40px;
+  }
+
+  .xs\:justify-center{
+    justify-content: center;
   }
 
   .xs\:border-none{

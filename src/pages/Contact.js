@@ -129,7 +129,7 @@ const Contact = () => {
             )}
 
             <button
-              className="flex items-center p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded-2xl"
+              className="flex items-center p-5 bg-yellow font-semibold text-deep-blue mt-5 hover:bg-red hover:text-white transition duration-500 rounded-2xl xs:mx-auto"
               type="submit"
             >
               SEND A MESSAGE <FiSend className="ml-2" size={22} />
