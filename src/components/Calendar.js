@@ -93,9 +93,7 @@ const Calendar = () => {
                 type="button"
                 onClick={() => setSelectedDay(day)}
                 className={classNames(
-                  isEqual(day, selectedDay) &&
-                    "text-white" &&
-                    "dark:text-black",
+                  isEqual(day, selectedDay) && "text-white dark:text-black",
                   !isEqual(day, selectedDay) && isToday(day) && "text-red",
                   !isEqual(day, selectedDay) &&
                     !isToday(day) &&
