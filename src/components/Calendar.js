@@ -93,25 +93,25 @@ const Calendar = () => {
                 type="button"
                 onClick={() => setSelectedDay(day)}
                 className={classNames(
-                  isEqual(day, selectedDay) && "text-white dark:text-black",
+                  isEqual(day, selectedDay) && "text-white",
                   !isEqual(day, selectedDay) && isToday(day) && "text-red",
                   !isEqual(day, selectedDay) &&
                     !isToday(day) &&
                     isSameMonth(day, firstDayCurrentMonth) &&
-                    "text-gray-900 dark:text-white",
+                    "text-gray-900 dark:text-white ",
                   !isEqual(day, selectedDay) &&
                     !isToday(day) &&
                     !isSameMonth(day, firstDayCurrentMonth) &&
                     "text-gray-400 ",
-                  isEqual(day, selectedDay) && isToday(day) && "bg-red",
+                  isEqual(day, selectedDay) && isToday(day) && "bg-red ",
                   isEqual(day, selectedDay) &&
                     !isToday(day) &&
-                    "dark:text-white dark:bg-white bg-dark",
+                    "dark:text-dark dark:bg-white bg-dark",
                   !isEqual(day, selectedDay) &&
                     "hover:bg-gray-200 dark:hover:text-black",
                   (isEqual(day, selectedDay) || isToday(day)) &&
                     "font-semibold",
-                  "mx-auto flex h-8 w-8 items-center justify-center rounded-full  "
+                  "mx-auto flex h-8 w-8 items-center justify-center rounded-full"
                 )}
               >
                 <time dateTime={format(day, "yyyy-MM-dd")}>
