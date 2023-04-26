@@ -54,7 +54,8 @@ module.exports = {
         cardShadow: "0 2px 10px rgba(0, 0, 0, 0.2)",
         "box-shadow-dark":
           "rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px",
-        "box-shadow-white": "-23px 23px 62px -17px rgba(255,255,255,0.72)",
+        "box-shadow-white":
+          "rgba(255, 255, 255, 0.3) 0px 14px 28px, rgba(255, 255, 255, 0.3) 0px 10px 10px",
       },
 
       screens: {
