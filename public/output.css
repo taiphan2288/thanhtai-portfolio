@@ -1523,8 +1523,8 @@ video {
 }
 
 .shadow-box-shadow-dark{
-  --tw-shadow: -23px 23px 62px -17px rgba(0,0,0,0.72);
-  --tw-shadow-colored: -23px 23px 62px -17px var(--tw-shadow-color);
+  --tw-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  --tw-shadow-colored: 0px 14px 28px var(--tw-shadow-color), 0px 10px 10px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
