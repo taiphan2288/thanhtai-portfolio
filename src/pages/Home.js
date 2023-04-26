@@ -10,9 +10,9 @@ const Home = ({ setSelectedPage }) => {
       id="home"
       className="flex items-center w-full min-h-screen text-dark xl:justify-center"
     >
-      <div className="flex justify-between xl:flex-col lg:mt-26 mt-28 gap-x-4 ">
+      <div className="flex justify-between xl:flex-col lg:mt-26 mt-28">
         {/* IMAGE SECTION */}
-        <div className="basis-3/5 z-10 flex justify-end items-center md:mt-16 order-2 xl:justify-center">
+        <div className="basis-2/5 z-10 flex items-center md:mt-16 order-2 justify-center">
           <motion.div
             initial="hidden"
             whileInView="visible"
