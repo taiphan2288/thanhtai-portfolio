@@ -17,6 +17,8 @@ import {
   BsWater,
   BsThermometer,
   BsWind,
+  BsFillSunFill,
+  BsFillMoonStarsFill,
 } from "react-icons/bs";
 import { TbTemperatureCelsius } from "react-icons/tb";
 import { ImSpinner8 } from "react-icons/im";
@@ -143,14 +145,16 @@ const Weather = () => {
         <div className="">
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
-            className={`rounded-full p-1 flex items-center justify-center ${
+            className={`rounded-full p-2 flex items-center justify-center ${
               mode === "light" ? "bg-pink text-light" : "bg-light text-dark"
             }`}
           >
             {mode === "dark" ? (
-              <SunIcon className="fill-dark" />
+              // <SunIcon className="fill-dark" />
+              <BsFillSunFill size={24} />
             ) : (
-              <MoonIcon className="fill-dark" />
+              // <MoonIcon className="fill-dark" />
+              <BsFillMoonStarsFill size={24} />
             )}
           </button>
         </div>
