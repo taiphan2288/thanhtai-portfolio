@@ -148,9 +148,9 @@ const Weather = () => {
             }`}
           >
             {mode === "dark" ? (
-              <SunIcon className="fill-dark " width="32px" height="32px" />
+              <SunIcon className="fill-dark " width="32" height="32" />
             ) : (
-              <MoonIcon className="fill-dark " width="32px" height="32px" />
+              <MoonIcon className="fill-dark " width="32" height="32" />
             )}
           </button>
         </div>
