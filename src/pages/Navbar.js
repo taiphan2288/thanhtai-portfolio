@@ -79,6 +79,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
         {!isDesktop && (
           <motion.div
             className="fixed right-0 bottom-0 h-full bg-primary w-[300px]"
+            initial={{ opacity: 0, x: "100%" }}
             animate={isMenuToggled ? "open" : "closed"}
             transition={{ duration: 0.6 }}
             variants={variants}
