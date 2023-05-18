@@ -13,19 +13,9 @@ const Home = ({ setSelectedPage }) => {
       <div className="flex justify-between xl:flex-col lg:mt-26 mt-28">
         {/* IMAGE SECTION */}
         <div className="basis-2/5 z-10 flex items-center md:mt-16 order-2 justify-center">
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.7 }}
-            variants={{
-              hidden: { opacity: 0, x: -50 },
-              visible: { opacity: 1, x: 0 },
-            }}
-            className="flex justify-center items-center"
-          >
+          <div className="flex justify-center items-center">
             <Weather />
-          </motion.div>
+          </div>
         </div>
 
         {/* MAIN TEXT */}

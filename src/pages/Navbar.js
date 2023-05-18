@@ -18,6 +18,11 @@ const Link = ({ page, selectedPage, setSelectedPage }) => {
   );
 };
 
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "100%" },
+};
+
 const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
   const [isMenuToggled, setIsMenuToggled] = useState(false);
   const isDesktop = useMediaQuery("(min-width: 1024px)");
@@ -55,30 +60,28 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }) => {
             />
           </div>
         ) : (
-          <button
+          <motion.button
             className={`rounded-full p-2 ${
               isTopOfPage ? "bg-red" : "bg-white "
             }`}
-            onClick={() => setIsMenuToggled(!isMenuToggled)}
+            onClick={() => setIsMenuToggled((isMenuToggled) => !isMenuToggled)}
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
           >
             <CgMenuGridR
               size={24}
               className={`${isTopOfPage ? "text-white" : "text-red "}`}
             />
-          </button>
+          </motion.button>
         )}
 
         {/* MOBILE MENU POPUP */}
-        {!isDesktop && isMenuToggled && (
+        {!isDesktop && (
           <motion.div
             className="fixed right-0 bottom-0 h-full bg-primary w-[300px]"
-            initial="hidden"
-            animate={isMenuToggled === true ? "visible" : "hidden"}
+            animate={isMenuToggled ? "open" : "closed"}
             transition={{ duration: 0.6 }}
-            variants={{
-              hidden: { opacity: 0, x: "100%" },
-              visible: { opacity: 1, x: 0 },
-            }}
+            variants={variants}
           >
             {/* CLOSE ICON */}
             <div className="flex justify-end p-12 ">
