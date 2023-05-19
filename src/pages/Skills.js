@@ -27,10 +27,18 @@ const SkillProgress = ({ name, progress }) => {
       </p>
 
       <div className="h-3 rounded border border-dark p-0.5 flex items-center dark:text-white dark:border-white">
-        <span
+        <motion.span
           className="block bg-red h-1.5 rounded"
-          style={{ width: `${progress}` }}
-        ></span>
+          // style={{ width: `${progress}` }}
+          initial="hidden"
+          whileInView="visible"
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true, amount: 0.5 }}
+          variants={{
+            hidden: { width: 0 },
+            visible: { width: progress },
+          }}
+        ></motion.span>
       </div>
     </div>
   );
