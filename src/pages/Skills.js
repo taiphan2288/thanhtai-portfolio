@@ -61,7 +61,7 @@ const Skills = () => {
           MY <span className="text-red">SKILLS</span>
         </p>
         <LineGradient width="mx-auto w-1/5 ss:w-3/5 xl:w-2/5 " />
-        <p className="mt-10 mb-7 dark:text-white">
+        <p className="mt-10 mb-7 dark:text-white text-center">
           Having basic programming skills in embedded software and web/mobile
         </p>
       </motion.div>
