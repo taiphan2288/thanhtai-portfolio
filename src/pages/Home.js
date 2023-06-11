@@ -10,7 +10,7 @@ const Home = ({ setSelectedPage }) => {
       id="home"
       className="flex items-center w-full min-h-screen text-dark xl:justify-center"
     >
-      <div className="flex justify-between flex-row xl:flex-col lg:mt-26 mt-28">
+      <div className="flex w-full justify-between flex-row xl:flex-col lg:mt-26 mt-28">
         {/* IMAGE SECTION */}
         <div className="basis-2/5 z-10 flex items-center md:mt-16 order-2 justify-center">
           <div className="flex justify-center items-center">
