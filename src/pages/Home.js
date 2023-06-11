@@ -60,7 +60,7 @@ const Home = ({ setSelectedPage }) => {
               </span>
             </div>
 
-            <p className="mt-[20px] mb-8 xl:text-center text-start dark:text-white text-base xs:text-[14px]">
+            {/* <p className="mt-[20px] mb-8 xl:text-center text-start dark:text-white text-base xs:text-[14px]">
               Hi, I'm Tai. I work as an airport radar engineer, in addition to
               being a free-lance web and mobile developer 😉. I am a technology
               enthusiast and passionate about programming. Besides that, in
@@ -68,7 +68,7 @@ const Home = ({ setSelectedPage }) => {
               listening to music of various genres. It improves my mood and
               heals my soul 😆. Thank you for reading about me. Glad to meet you
               😘.
-            </p>
+            </p> */}
           </motion.div>
         </div>
       </div>
