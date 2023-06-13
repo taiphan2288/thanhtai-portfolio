@@ -9,6 +9,7 @@ import Education from "./pages/Education";
 import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
+import Particle from "./components/Particle";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -27,55 +28,58 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-light w-full min-h-screen dark:bg-dark">
-      <Navbar
-        isTopOfPage={isTopOfPage}
-        selectedPage={selectedPage}
-        setSelectedPage={setSelectedPage}
-      />
+    <>
+      <Particle />
+      <div className="bg-light w-full min-h-screen dark:bg-dark">
+        <Navbar
+          isTopOfPage={isTopOfPage}
+          selectedPage={selectedPage}
+          setSelectedPage={setSelectedPage}
+        />
 
-      <div className="w-full px-32 xs:px-4 sm:px-8 md:px-16">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("home")}
-        >
-          <Home setSelectedPage={setSelectedPage} />
-        </motion.div>
+        <div className="w-full px-32 xs:px-4 sm:px-8 md:px-16">
+          <motion.div
+            margin="0 0 -200px 0"
+            amount="all"
+            onViewportEnter={() => setSelectedPage("home")}
+          >
+            <Home setSelectedPage={setSelectedPage} />
+          </motion.div>
+        </div>
+
+        <div className="w-full px-32 xs:px-4 sm:px-8 md:px-16">
+          <motion.div
+            margin="0 0 -200px 0"
+            amount="all"
+            onViewportEnter={() => setSelectedPage("education")}
+          >
+            <Education />
+          </motion.div>
+        </div>
+
+        <div className="w-full px-32 xs:px-4 sm:px-8 md:px-16">
+          <motion.div
+            margin="0 0 -200px 0"
+            amount="all"
+            onViewportEnter={() => setSelectedPage("skills")}
+          >
+            <Skills />
+          </motion.div>
+        </div>
+
+        <div className="w-full px-32 xs:px-4 sm:px-8 md:px-16">
+          <motion.div
+            margin="0 0 -200px 0"
+            amount="all"
+            onViewportEnter={() => setSelectedPage("contact")}
+          >
+            <Contact />
+          </motion.div>
+        </div>
+
+        <Footer />
       </div>
-
-      <div className="w-full px-32 xs:px-4 sm:px-8 md:px-16">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("education")}
-        >
-          <Education />
-        </motion.div>
-      </div>
-
-      <div className="w-full px-32 xs:px-4 sm:px-8 md:px-16">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("skills")}
-        >
-          <Skills />
-        </motion.div>
-      </div>
-
-      <div className="w-full px-32 xs:px-4 sm:px-8 md:px-16">
-        <motion.div
-          margin="0 0 -200px 0"
-          amount="all"
-          onViewportEnter={() => setSelectedPage("contact")}
-        >
-          <Contact />
-        </motion.div>
-      </div>
-
-      <Footer />
-    </div>
+    </>
   );
 }
 

@@ -23,7 +23,6 @@ import {
 import { TbTemperatureCelsius } from "react-icons/tb";
 import { ImSpinner8 } from "react-icons/im";
 import Calendar from "./Calendar";
-import { MoonIcon, SunIcon } from "./DarkModeIcons";
 import useThemeSwitcher from "../hooks/useThemeSwitcher";
 
 // api key
@@ -146,14 +145,12 @@ const Weather = () => {
           <button
             onClick={() => setMode(mode === "light" ? "dark" : "light")}
             className={`rounded-full p-2 flex items-center justify-center ${
-              mode === "light" ? "bg-pink text-light" : "bg-light text-dark"
+              mode === "light" ? "bg-red text-light" : "bg-light text-dark"
             }`}
           >
             {mode === "dark" ? (
-              // <SunIcon className="fill-dark" />
               <BsFillSunFill size={24} />
             ) : (
-              // <MoonIcon className="fill-dark" />
               <BsFillMoonStarsFill size={24} />
             )}
           </button>
@@ -161,14 +158,14 @@ const Weather = () => {
       </div>
 
       {/* line */}
-      <div className="w-[3px] h-[360px] bg-pink rounded-md mx-2 lg:w-5/6 lg:h-1 lg:my-4"></div>
+      <div className="w-[3px] h-[360px] bg-red rounded-md mx-2 lg:w-5/6 lg:h-1 lg:my-4"></div>
 
       {/* Weather */}
       <div className="flex flex-col px-4 lg:px-0">
         {/* form */}
         <div
-          className="h-14 bg-pink w-full
-            rounded-full backdrop-blur-[10px] mb-6 dark:bg-pink"
+          className="h-14 bg-red w-full
+            rounded-full backdrop-blur-[10px] mb-6 dark:bg-red"
         >
           <div
             className={"h-full relative flex items-center justify-between p-2 "}
@@ -188,7 +185,7 @@ const Weather = () => {
           </div>
         </div>
         {/* card */}
-        <div className="w-[20rem] bg-pink text-white backdrop-blur-[10px] rounded-[16px] py-10 px-6 dark:bg-pink">
+        <div className="w-[20rem] bg-red text-white backdrop-blur-[10px] rounded-[16px] py-10 px-6 dark:bg-red">
           {loading ? (
             <div className="w-full h-full flex justify-center items-center">
               <ImSpinner8 className="text-white text-4xl animate-spin" />
