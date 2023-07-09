@@ -62,21 +62,34 @@ const Skills = () => {
         </p>
         <LineGradient width="mx-auto w-1/5 ss:w-3/5 xl:w-2/5 " />
         <p className="mt-10 mb-7 dark:text-white text-center">
-          Having basic programming skills in embedded software and web/mobile
+          Having basic hard skills and soft skills
         </p>
       </motion.div>
 
       {/* Skill Progress */}
       <div className="flex wrap gap-2 justify-center w-full lg:flex-col my-8">
-        <div className="relative border border-primary rounded p-2 grow shrink">
-          <SkillProgress name="HTML" progress="80%" />
-          <SkillProgress name="CSS" progress="50%" />
-          <SkillProgress name="Javascript" progress="60%" />
+        <div className="w-full">
+          <p className="text-center text-dark font-bold text-lg mb-2">
+            Hard Skills
+          </p>
+          <div className="relative flex flex-col border border-primary rounded p-2 grow shrink">
+            <SkillProgress name="Web/Mobile Design" progress="60%" />
+            <SkillProgress name="Mechanical Design" progress="70%" />
+            <SkillProgress name="Technical Consulting" progress="60%" />
+          </div>
         </div>
-        <div className="relative border border-primary rounded p-2 grow shrink">
-          <SkillProgress name="ReactJs" progress="70%" />
-          <SkillProgress name="NodeJs" progress="40%" />
-          <SkillProgress name="Python" progress="60%" />
+        <div className="w-full">
+          <p className="text-center text-dark font-bold text-lg mb-2">
+            Soft Skills
+          </p>
+          <div className="relative flex flex-col border border-primary rounded p-2 grow shrink">
+            <SkillProgress name="English Communication" progress="50%" />
+            <SkillProgress
+              name="Analysis and Problem-solving"
+              progress="70%"
+            />
+            <SkillProgress name="Team-work/Collaboration" progress="85%" />
+          </div>
         </div>
       </div>
 
@@ -88,19 +101,19 @@ const Skills = () => {
             lg:p-6 md:p-4 xs:text-xs xs:p-2 dark:bg-white dark:text-dark"
             whileHover={{ scale: 1.05 }}
           >
-            Web
+            Skills
           </motion.div>
 
-          <Skill name="CSS" x="1vw" y="-14vw" />
-          <Skill name="HTML" x="-16vw" y="6vw" />
-          <Skill name="ReactJs" x="6vw" y="18vw" />
-          <Skill name="ReactNative" x="-24vw" y="-4vw" />
-          <Skill name="Python" x="16vw" y="-4vw" />
-          <Skill name="Javascript" x="18vw" y="4vw" />
-          <Skill name="Firebase" x="32vw" y="-2vw" />
-          <Skill name="NodeJs" x="-28vw" y="15vw" />
-          <Skill name="Github" x="-20vw" y="-15vw" />
-          <Skill name="Tailwind CSS" x="20vw" y="-20vw" />
+          <Skill name="Web/mobile development" x="1vw" y="-14vw" />
+          {/* <Skill name="HTML" x="-16vw" y="6vw" /> */}
+          <Skill name="Mechanical design" x="6vw" y="18vw" />
+          <Skill name="Technical consulting" x="-24vw" y="-4vw" />
+          {/* <Skill name="Python" x="16vw" y="-4vw" /> */}
+          <Skill name="English" x="18vw" y="4vw" />
+          <Skill name="Self-learning" x="32vw" y="-2vw" />
+          <Skill name="Team-work" x="-28vw" y="15vw" />
+          {/* <Skill name="Github" x="-20vw" y="-15vw" /> */}
+          <Skill name="Time management" x="20vw" y="-20vw" />
         </div>
       </div>
     </section>

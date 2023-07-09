@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
@@ -8,7 +8,7 @@ const Particle = () => {
   const [mode, setMode] = useThemeSwitcher();
 
   const particlesInit = useCallback(async (engine) => {
-    console.log(engine);
+    // console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
     // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
     // starting from v2 you can add only the features you need reducing the bundle size
@@ -21,7 +21,6 @@ const Particle = () => {
 
   return (
     <Particles
-      theme={mode}
       id="tsparticles"
       init={particlesInit}
       loaded={particlesLoaded}
@@ -70,7 +69,7 @@ const Particle = () => {
             value: "#B63E96",
           },
           links: {
-            color: "#777777",
+            color: "#777",
             distance: 150,
             enable: true,
             opacity: 0.5,
