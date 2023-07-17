@@ -8,9 +8,9 @@ const Home = ({ setSelectedPage }) => {
   return (
     <section
       id="home"
-      className="flex items-center w-full min-h-screen text-dark xl:justify-center"
+      className="flex items-center w-full min-h-screen text-dark"
     >
-      <div className="flex w-full justify-between flex-row xl:flex-col lg:mt-26 mt-28">
+      <div className="flex w-full justify-between 2xl:flex-col lg:mt-26 mt-28">
         {/* IMAGE SECTION */}
         <div className="basis-2/5 z-10 flex items-center md:mt-16 order-2 justify-center">
           <div className="flex justify-center items-center">
@@ -19,7 +19,7 @@ const Home = ({ setSelectedPage }) => {
         </div>
 
         {/* MAIN TEXT */}
-        <div className="basis-2/5 z-10 flex-col justify-center lg:mt-12 mb-10">
+        <div className="basis-2/5 z-10 lg:mt-12 mb-10">
           {/* HEADINGS */}
           <motion.div
             initial="hidden"
@@ -30,6 +30,7 @@ const Home = ({ setSelectedPage }) => {
               hidden: { opacity: 0, x: -50 },
               visible: { opacity: 1, x: 0 },
             }}
+            className="flex justify-center items-center flex-col"
           >
             <p className="text-6xl font-semibold xs:font-medium font-playfair xl:text-center text-start xs:text-5xl dark:text-white">
               Thanh {""}
