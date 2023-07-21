@@ -5,7 +5,6 @@ import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import { FiSend } from "react-icons/fi";
 import { toast } from "react-toastify";
-import useThemeSwitcher from "../hooks/useThemeSwitcher";
 
 const Contact = () => {
   const form = useRef();
