@@ -58,14 +58,14 @@ const Calendar = () => {
             <button
               type="button"
               onClick={previousMonth}
-              className="-my-1.5 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-700 "
+              className="-my-1.5 flex flex-none items-center justify-center p-1.5 dark:text-dark hover:opacity-80 dark:bg-white rounded-full bg-red text-white"
             >
               <BsChevronLeft className="w-5 h-5" aria-hidden="true" />
             </button>
             <button
               onClick={nextMonth}
               type="button"
-              className="-my-1.5 -mr-1.5 ml-2 flex flex-none items-center justify-center p-1.5 text-gray-400 hover:text-gray-700"
+              className="-my-1.5 -mr-1.5 ml-2 flex flex-none items-center justify-center p-1.5 dark:text-dark hover:opacity-80 dark:bg-white rounded-full bg-red text-white"
             >
               <BsChevronRight className="w-5 h-5" aria-hidden="true" />
             </button>
