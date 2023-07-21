@@ -10,6 +10,7 @@ import Skills from "./pages/Skills";
 import Contact from "./pages/Contact";
 import Footer from "./pages/Footer";
 import Particle from "./components/Particle";
+import About from "./pages/About";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("home");
@@ -44,6 +45,16 @@ function App() {
             onViewportEnter={() => setSelectedPage("home")}
           >
             <Home setSelectedPage={setSelectedPage} />
+          </motion.div>
+        </div>
+
+        <div className="w-full px-32 xs:px-4 sm:px-8 md:px-16">
+          <motion.div
+            margin="0 0 -200px 0"
+            amount="all"
+            onViewportEnter={() => setSelectedPage("about")}
+          >
+            <About />
           </motion.div>
         </div>
 
