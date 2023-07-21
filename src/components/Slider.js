@@ -86,7 +86,7 @@ const Slider = () => {
             onClick={handlePrev}
             className="bg-primary p-2 rounded-full dark:bg-white"
           >
-            <GrPrevious size={24} className="!text-white" />
+            <GrPrevious size={24} />
           </button>
           <button
             onClick={handleNext}
