@@ -84,13 +84,13 @@ const Slider = () => {
         <div className="absolute flex gap-24 text-lg items-center justify-center mt-20">
           <button
             onClick={handlePrev}
-            className="bg-primary p-2 rounded-full dark:bg-white"
+            className="bg-red p-2 rounded-full dark:bg-white hover:opacity-70"
           >
             <GrPrevious size={24} />
           </button>
           <button
             onClick={handleNext}
-            className="bg-primary p-2 rounded-full dark:bg-white"
+            className="bg-red p-2 rounded-full dark:bg-white hover:opacity-70"
           >
             <GrNext size={24} />
           </button>
