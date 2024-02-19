@@ -50,7 +50,7 @@ const Home = ({ setSelectedPage }) => {
               <p className="mr-2 dark:text-white">I'm a</p>
               <span className="text-red">
                 <Typewriter
-                  words={["Software Developer", "Technical Support Engineer"]}
+                  words={["Software Developer", "Technical Engineer"]}
                   loop={Infinity}
                   cursor
                   cursorStyle="|"
