@@ -52,7 +52,7 @@ const Education = () => {
         }}
       >
         <h2 className="font-bold text-7xl mb-4 w-full text-center md:text-5xl xs:text-4xl md:mb-2 uppercase text-red">
-          Education
+          Education & Work
         </h2>
         <LineGradient width="mx-auto w-1/5 ss:w-3/5 xl:w-2/5 " />
       </motion.div>
@@ -65,16 +65,23 @@ const Education = () => {
 
         <ul className="w-full flex flex-col justify-between lg:ml-4 ml-10">
           <Details
+            type="technical engineer"
+            time="2023-now"
+            place="Vietnam Air Traffic Management Corporation (VATM)"
+            info="Responsible for operating and maintaining technical equipment for the air traffic control station"
+          />
+
+          <Details
             type="degree of mechanical engineering"
             time="2017-2022"
-            place="hanoi university of science and technology (HUST)"
+            place="Hanoi university of science and technology (HUST)"
             info="Completed all courses at university. Have knowledges in robotic and basic programming skills on website and mobile"
           />
 
           <Details
             type="high school"
             time="2014-2017"
-            place="high school of huynh thuc khang"
+            place="High school of huynh thuc khang"
             info="Completed"
           />
 
