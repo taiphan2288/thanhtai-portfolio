@@ -62,7 +62,7 @@ const Skills = () => {
         </p>
         <LineGradient width="mx-auto w-1/5 ss:w-3/5 xl:w-2/5 " />
         <p className="mt-10 mb-7 dark:text-white text-center">
-          Having basic hard skills and soft skills
+          Personality and interests
         </p>
       </motion.div>
 
@@ -73,9 +73,9 @@ const Skills = () => {
             Hard Skills
           </p>
           <div className="relative flex flex-col border border-primary rounded p-2 grow shrink">
-            <SkillProgress name="Web/Mobile Design" progress="60%" />
-            <SkillProgress name="Mechanical Design" progress="70%" />
-            <SkillProgress name="Technical Consulting" progress="60%" />
+            <SkillProgress name="Expense management" progress="60%" />
+            <SkillProgress name="Open-minded" progress="90%" />
+            <SkillProgress name="Sensitive" progress="70%" />
           </div>
         </div>
         <div className="w-full">
@@ -84,11 +84,8 @@ const Skills = () => {
           </p>
           <div className="relative flex flex-col border border-primary rounded p-2 grow shrink">
             <SkillProgress name="English Communication" progress="50%" />
-            <SkillProgress
-              name="Analysis and Problem-solving"
-              progress="70%"
-            />
-            <SkillProgress name="Team-work/Collaboration" progress="85%" />
+            <SkillProgress name="Cooking and doing housework" progress="70%" />
+            <SkillProgress name="Good listener" progress="85%" />
           </div>
         </div>
       </div>
@@ -104,16 +101,17 @@ const Skills = () => {
             Skills
           </motion.div>
 
-          <Skill name="Web/mobile development" x="1vw" y="-14vw" />
+          <Skill name="Cooking" x="1vw" y="-14vw" />
           {/* <Skill name="HTML" x="-16vw" y="6vw" /> */}
-          <Skill name="Mechanical design" x="6vw" y="18vw" />
+          <Skill name="Repair miscellaneous items" x="6vw" y="18vw" />
           <Skill name="Technical consulting" x="-24vw" y="-4vw" />
           {/* <Skill name="Python" x="16vw" y="-4vw" /> */}
           <Skill name="English" x="18vw" y="4vw" />
           <Skill name="Self-learning" x="32vw" y="-2vw" />
-          <Skill name="Team-work" x="-28vw" y="15vw" />
+          <Skill name="play all kinds of sports" x="-28vw" y="10vw" />
           {/* <Skill name="Github" x="-20vw" y="-15vw" /> */}
           <Skill name="Time management" x="20vw" y="-20vw" />
+          <Skill name="Good listener " x="-20vw" y="-20vw" />
         </div>
       </div>
     </section>
