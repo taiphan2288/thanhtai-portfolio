@@ -68,7 +68,7 @@ const Education = () => {
             type="technical engineer"
             time="2023-now"
             place="Vietnam Air Traffic Management Corporation (VATM)"
-            info="Responsible for operating and maintaining technical equipment for the air traffic control station"
+            info="Responsible for operating and maintaining technical equipments for the air traffic control station"
           />
 
           <Details
