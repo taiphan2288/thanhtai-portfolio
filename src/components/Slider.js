@@ -19,8 +19,17 @@ import slide_image_1 from "../assets/personal-images/Img_1.jpg";
 import slide_image_2 from "../assets/personal-images/Img_2.jpg";
 import slide_image_3 from "../assets/personal-images/Img_3.jpg";
 import slide_image_4 from "../assets/personal-images/Img_4.jpg";
+import slide_image_5 from "../assets/personal-images/Img_5.jpg";
+import slide_image_6 from "../assets/personal-images/Img_6.jpg";
 
-const slide_img = [slide_image_1, slide_image_2, slide_image_3, slide_image_4];
+const slide_img = [
+  slide_image_1,
+  slide_image_2,
+  slide_image_3,
+  slide_image_4,
+  slide_image_5,
+  slide_image_6,
+];
 
 const Slider = () => {
   const SlideRef = useRef();
@@ -58,6 +67,10 @@ const Slider = () => {
             slidesPerView: 2,
             spaceBetween: 20,
           },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 10,
+          },
         }}
         pagination={{ el: ".swiper-pagination", clickable: true }}
         navigation={false}
@@ -81,7 +94,7 @@ const Slider = () => {
       </Swiper>
 
       <div className="relative flex justify-center items-center mt-10">
-        <div className="absolute flex gap-24 text-lg items-center justify-center mt-20">
+        {/* <div className="absolute flex gap-24 text-lg items-center justify-center mt-20">
           <button
             onClick={handlePrev}
             className="bg-red p-2 rounded-full dark:bg-white hover:opacity-70"
@@ -94,7 +107,7 @@ const Slider = () => {
           >
             <GrNext size={24} />
           </button>
-        </div>
+        </div> */}
         <div className="swiper-pagination flex justify-center items-center gap-x-4"></div>
       </div>
     </div>
