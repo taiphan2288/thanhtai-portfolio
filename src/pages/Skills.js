@@ -69,9 +69,9 @@ const Skills = () => {
       {/* Skill Progress */}
       <div className="flex wrap gap-2 justify-center w-full lg:flex-col my-8">
         <div className="w-full">
-          <p className="text-center text-dark font-bold text-lg mb-2">
+          {/* <p className="text-center text-dark font-bold text-lg mb-2">
             Hard Skills
-          </p>
+          </p> */}
           <div className="relative flex flex-col border border-primary rounded p-2 grow shrink">
             <SkillProgress name="Expense management" progress="60%" />
             <SkillProgress name="Open-minded" progress="90%" />
@@ -79,9 +79,9 @@ const Skills = () => {
           </div>
         </div>
         <div className="w-full">
-          <p className="text-center text-dark font-bold text-lg mb-2">
+          {/* <p className="text-center text-dark font-bold text-lg mb-2">
             Soft Skills
-          </p>
+          </p> */}
           <div className="relative flex flex-col border border-primary rounded p-2 grow shrink">
             <SkillProgress name="English Communication" progress="50%" />
             <SkillProgress name="Cooking and doing housework" progress="70%" />
