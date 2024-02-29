@@ -84,20 +84,6 @@ const Education = () => {
             place="High school of huynh thuc khang"
             info="Completed"
           />
-
-          <Details
-            type="junior high school"
-            time="2010-2014"
-            place="junior high school of le mao"
-            info="Completed"
-          />
-
-          <Details
-            type=" primary school"
-            time="2005-2010"
-            place="primary school of le mao"
-            info="Completed"
-          />
         </ul>
       </div>
     </section>
